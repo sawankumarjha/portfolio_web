@@ -1,0 +1,458 @@
+/* Universal Style */
+/* Import Roboto Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Import Rakkas Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&family=Roboto&display=swap");
+
+/* font-family: 'Rakkas', sans-serif; */
+:root {
+    --transition: all 0.5s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #581845;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b0398db0;
+}
+
+/* ******************************* */
+
+header {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("wallpaper2.jpg");
+    background-size: 100% 100%;
+    min-height: 500px;
+}
+
+.headerOverlay {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background-color: rgba(59, 15, 46, 0.5);
+    z-index: 1;
+}
+
+.heading {
+    text-transform: uppercase;
+    margin: 50px 0px;
+    text-align: center;
+    color: #581845;
+    font-family: "Rakkas", sans-serif;
+}
+
+.navigation {
+    top: 0;
+    content: "";
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.navigation a {
+    font-size: 16px;
+    margin: 0px 20px;
+    color: #ffffff;
+    transition: var(--transition);
+}
+
+.navigation a:hover {
+    color: gray;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #581845 !important;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: #ffffff !important;
+    background: #581845;
+}
+
+.aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: -150px 10%;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 4px 4px rgba(229, 229, 229, 0.46);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.aboutImage {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutImage img {
+    width: 100%;
+}
+
+.aboutContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.aboutContent p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.aboutContent p b {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.aboutContent ul {
+    margin: 30px 0px;
+}
+
+.aboutContent ul a {
+    transition: var(--transition);
+    padding: 6px 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px 4px rgba(229, 229, 229, 0.46);
+}
+
+.aboutContent ul a:hover {
+    box-shadow: inset 0px 0px 4px 4px rgba(229, 229, 229, 0.46);
+}
+
+.btnDownload {
+    background-color: #581845;
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 220px;
+    text-align: center;
+    transition: var(--transition);
+}
+.btnDownload:hover {
+    color: #581845;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 4px 4px #58184563;
+}
+
+.fixedFooter {
+    top: 90vh;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.fixedFooter a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #581845;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 4px rgba(229, 229, 229, 0.46);
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.fixedFooter a:hover {
+    color: #ffffff;
+    background-color: #581845;
+}
+
+.fixedFooter a i {
+    margin-right: 10px;
+}
+
+/* Education */
+.education {
+    display: flex;
+    margin: 50px 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.individualEducation {
+    width: 20%;
+    text-align: center;
+    padding: 100px 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-image: url("wallpaper2.jpg");
+    background-attachment: fixed;
+    color: #ffffff;
+    transition: var(--transition);
+}
+
+.individualEducation:hover .educationContent {
+    display: block;
+}
+
+.education hr {
+    height: 2px;
+    width: 8%;
+    border-radius: 10px;
+    background-color: #581845;
+}
+
+.educationContent {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    background-color: #ffffff;
+    width: 25%;
+    box-shadow: 0px 10px 10px -9px #58184563;
+    color: #581845;
+    text-align: left;
+    padding: 10px;
+}
+
+.educationContent h2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.educationContent h2 i {
+    padding: 5px 10px;
+    box-shadow: inset 0px 0px 2px 1px #58184563;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    margin: 0px 10%;
+
+    flex-wrap: wrap;
+}
+
+.skills div {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px rgba(229, 229, 229, 0.46);
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.skills div i {
+    color: #581845;
+    margin-bottom: 10px;
+}
+
+.skills div h4 {
+    color: #581845;
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+.skills div:hover {
+    color: #ffffff;
+    background-color: #581845;
+    border-radius: 20px;
+}
+
+.skills div:hover h4,
+.skills div:hover i {
+    color: #ffffff;
+}
+
+.projects {
+    margin: 50px 0px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("wallpaper2.jpg");
+    background-size: 100% 100%;
+    min-height: 500px;
+}
+
+.overlayProject {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    padding: 10px 10%;
+    padding-bottom: 20px;
+    background-color: rgba(88, 24, 69, 0.4);
+}
+
+.navigationProject {
+    display: flex;
+    padding: 20px;
+    /* border-radius: 20px; */
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7));
+}
+
+.navigationProject span {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #581845;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 20px;
+}
+
+.navigationProject .activeProjectClass {
+    background-color: #581845;
+    color: #ffffff;
+}
+
+.mainProject {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 20px 0px; */
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7));
+    /* border-radius: 20px; */
+    padding: 20px;
+}
+
+.mainProject div {
+    width: 20%;
+    background-color: white;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.mainProject div img {
+    width: 100%;
+    height: 200px;
+    filter: grayscale(0.5);
+    transition: var(--transition);
+}
+
+.mainProject div:hover img {
+    transform: scale(1.02, 1.02);
+    filter: grayscale(0);
+}
+
+.mainProject div h4 {
+    text-align: center;
+    box-shadow: inset 0px 0px 3px 1px #8080808c;
+    color: #581845;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.hideClass {
+    display: none;
+}
+
+/* Project Popup */
+.project_popup {
+    display: none;
+    top: 0;
+    content: "";
+    position: fixed;
+    width: 80%;
+    margin: 10%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 10px 10px -9px #581845;
+    min-height: 500px;
+}
+
+.project_popup i {
+    color: #581845;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.project_popup i:hover {
+    box-shadow: inset 0px 0px 3px 3px rgba(88, 24, 69, 0.69);
+    color: gray;
+}
+
+/* Contact Us */
+.contact_us {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 10%;
+    background-image: url("wallpaper2.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.contact_map {
+    width: 40%;
+    padding: 0px 10px;
+    background-color: #ffffff;
+}
+
+.contact_us form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: #ffffff;
+}
+
+.contact_us form input,
+.contact_us form textarea {
+    color: #ffffff;
+    outline: none;
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7));
+    transition: var(--transition);
+}
+
+.contact_us form div input:hover {
+    box-shadow: inset 0px 0px 3px 3px #fafafa;
+    background-color: #ffffff;
+    color: #581845;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 10px 2%;
+    border-top: 2px solid #581845;
+    padding: 10px;
+    color: #581845;
+}

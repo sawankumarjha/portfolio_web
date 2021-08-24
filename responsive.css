@@ -1,0 +1,117 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .navigation {
+        padding: 20px;
+    }
+    .aboutImage {
+        width: 100%;
+    }
+    .aboutContent {
+        width: 100%;
+    }
+    .individualEducation {
+        width: 25%;
+        padding: 30px;
+    }
+    .skills div {
+        width: 45%;
+        margin: 20px 2.5%;
+    }
+
+    .mainProject div {
+        width: 40%;
+    }
+    .fixedFooter {
+        justify-content: center;
+        padding: 0px 2px;
+    }
+    .fixedFooter a {
+        margin: 0px 20px;
+    }
+}
+@media screen and (min-device-width: 280px) and (max-device-width: 764px) {
+    .aboutUs {
+        padding: 10px;
+    }
+    .aboutImage {
+        width: 100%;
+        padding: 10px;
+    }
+    .aboutContent {
+        width: 100%;
+    }
+    .education {
+        flex-direction: column;
+    }
+    .individualEducation {
+        width: 100%;
+        padding: 100px 50px;
+    }
+    .educationContent {
+        width: 80%;
+    }
+    .education hr {
+        height: 100px;
+        width: 2px;
+    }
+    .skills div {
+        width: 90%;
+        margin: 20px 5%;
+    }
+
+    .mainProject div {
+        width: 90%;
+
+        margin: 20px 5%;
+    }
+
+    .navigationProject {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigationProject span {
+        margin: 10px 0px;
+    }
+    .project_popup {
+        min-height: 300px;
+    }
+
+    .contact_map {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .contact_us form {
+        width: 100%;
+    }
+    .fixedFooter {
+        justify-content: center;
+        padding: 0px 2px;
+    }
+    .fixedFooter a {
+        margin: 0px 5px;
+    }
+    .navigation {
+        flex-wrap: wrap;
+        padding: 20px 5px;
+        justify-content: flex-start;
+    }
+
+    .navigation a {
+        font-size: 16px;
+        margin: 10px;
+        color: #ffffff;
+        transition: var(--transition);
+    }
+    .btnDownload {
+        background-color: #581845;
+        color: #ffffff;
+        padding: 10px 20px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .overlayProject {
+        /* padding: 0px; */
+        padding-bottom: 20px;
+        background-color: rgba(88, 24, 69, 0.4);
+    }
+}
